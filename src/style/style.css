@@ -585,7 +585,7 @@ header {
   flex-wrap: wrap;
 }
 .sing-un__form > input[type=text] {
-  padding: 0 0 17px 15px;
+  padding: 10px 0 17px 15px;
   border: none;
   background: none;
   border-bottom: solid 2px white;
