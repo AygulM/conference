@@ -18,7 +18,7 @@ h2 {
 }
 header {
   position: relative;
-  background-image: url(../images/header_fon.png);
+  background-image: url(images/header_fon.png);
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
@@ -48,14 +48,14 @@ header {
   font-size: 18px;
   line-height: 22px;
 }
+.header__tel > a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #FFFFFF;
+}
 .header__tel,
 .header__bus {
   font-size: 18px;
-}
-.navbar a {
-  text-decoration: none;
-  color: #FFFFFF;
-  font-size: 14px;
 }
 .navbar {
   display: flex;
@@ -70,6 +70,11 @@ header {
   display: inline;
   padding-top: 3px;
   padding-left: 75px;
+}
+.navbar > li > a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 14px;
 }
 .header__info {
   display: flex;
@@ -123,6 +128,10 @@ header {
   font-weight: 500;
   font-size: 15.3717px;
   line-height: 19px;
+  cursor: pointer;
+}
+.reg__btn:hover {
+  background: #3262ff;
 }
 .info__logo {
   margin: 0 auto;
@@ -346,9 +355,6 @@ header {
   left: -75px;
   color: #00DA71;
 }
-.program__item--7 .prog__info {
-  padding: 20px 140px 35px 108px;
-}
 .program__item--7 .prog__p {
   padding-top: 23px;
 }
@@ -360,10 +366,8 @@ header {
   margin-left: 60px;
 }
 .prog__list--7 > li::before {
+  left: -60px;
   color: #FF0000;
-}
-.program__item--8 .prog__info {
-  padding: 10px 140px 40px 108px;
 }
 .program__item--8 .prog__p {
   padding-top: 25px;
@@ -372,7 +376,6 @@ header {
   margin-top: 45px;
 }
 .prog__list--8 > li::before {
-  left: -82px;
   color: #03D2FF;
 }
 .prog__list--9 > li::before {
@@ -409,6 +412,7 @@ header {
 }
 .question__content {
   max-height: 0px;
+  padding-left: 10px;
   overflow: hidden;
   -webkit-transition: max-height 0.35s;
   -o-transition: max-height 0.35s;
@@ -435,8 +439,8 @@ header {
 }
 .question__item input[type=checkbox] + label::after {
   content: "+";
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   font-size: 32px;
   color: #2858FF;
   display: flex;
@@ -585,10 +589,6 @@ header {
   border: none;
   background: none;
   border-bottom: solid 2px white;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
 }
 .sing-un__form > input[type=text]:nth-child(odd) {
   width: 339px;
@@ -597,6 +597,13 @@ header {
 .sing-un__form > input[type=text]:nth-child(even) {
   width: 356px;
   margin: 75px 75px 0 0;
+}
+.sing-un__form > input[type=text]::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
 }
 input[type='checkbox']:not(:checked) + label:before {
   content: '';
@@ -650,7 +657,7 @@ input[type='checkbox']:not(:checked) + label:before {
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
 }
-.form__sudmit {
+.form__submit {
   padding-top: 100px;
   display: flex;
   flex-wrap: wrap;
@@ -667,13 +674,19 @@ input[type=submit] {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background: #3262ff;
 }
 .footer {
-  height: 490px;
-  background: url(../images/footer_fon.png);
+  height: 550px;
+  background: url(images/footer_fon.png);
+  background-position: left top;
+  background-size: cover;
 }
 .footer__navbar {
   display: flex;
   justify-content: space-between;
-  padding-top: 380px;
+  padding-top: 450px;
 }
