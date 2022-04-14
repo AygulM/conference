@@ -30,6 +30,7 @@ header {
   height: 240px;
   background: linear-gradient(180deg, rgba(0, 11, 25, 0) 0%, #000B19 77.07%);
   bottom: 0;
+  left: 0;
 }
 .header_navbar {
   display: flex;
@@ -133,21 +134,31 @@ header {
 .reg__btn:hover {
   background: #3262ff;
 }
+.info__wrapper {
+  border: solid 1px hotpink;
+}
 .info__logo {
+  text-align: center;
+  border: solid 1px gold;
+}
+.info__logo > img {
   margin: 0 auto;
   width: 437px;
   height: 112px;
+  border: solid 1px green;
 }
 .info__invitation {
   padding: 98px 0 200px 110px;
   font-size: 18px;
 }
 .info__invitation > p:first-child {
-  width: 780px;
+  width: 88%;
+  border: solid 1px lightgray;
 }
 .info__invitation > p:last-child {
   padding-top: 47px;
-  width: 730px;
+  width: 85%;
+  border: solid 1px gray;
 }
 .speaker__header {
   font-size: 36px;
@@ -185,7 +196,7 @@ header {
 .speaker__info {
   padding: 35px 0 0 160px;
 }
-.speaker__info > p:first-child {
+.speaker__info > h3 {
   font-size: 36px;
   font-weight: bold;
 }
@@ -213,6 +224,7 @@ header {
   padding: 215px 0 0 66px;
 }
 .program__clock {
+  border: solid 1px green;
   position: absolute;
   right: -45px;
   top: 130px;
@@ -470,7 +482,7 @@ header {
   font-size: 18px;
   line-height: 2;
 }
-.for__text > p:first-child {
+.for__text > h2 {
   line-height: 1;
   font-size: 36px;
   font-weight: bold;
@@ -506,7 +518,7 @@ header {
   margin-left: -65px;
   margin-top: 40px;
 }
-.for__text--know > p {
+.for__text--know > h2 {
   padding-left: 50px;
 }
 .for__text--know > ul {
@@ -519,8 +531,8 @@ header {
   font-weight: bold;
 }
 .partner__block {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin-top: 126px;
   margin-bottom: 50px;
 }
@@ -589,6 +601,10 @@ header {
   border: none;
   background: none;
   border-bottom: solid 2px white;
+  color: #ffffff;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
 }
 .sing-un__form > input[type=text]:nth-child(odd) {
   width: 339px;

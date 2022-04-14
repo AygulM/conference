@@ -23,7 +23,11 @@ h2{
     font-size: 36px;
 }
 
-//-----------   header  ----
+//-----------   header  ---- 
+
+// main, footer{
+//     display: none;
+// }
 header{
     position: relative;
     background-image:  url(images/header_fon.png);
@@ -31,6 +35,7 @@ header{
     background-position: center right;
     background-repeat: no-repeat;
     height: 838px;
+    // width: 100%;
 }
 .header__gradient{
     position: absolute;
@@ -38,6 +43,7 @@ header{
     height: 240px;
     background: linear-gradient(180deg, rgba(0, 11, 25, 0) 0%, #000B19 77.07%);
     bottom: 0;
+    left: 0;
 }
 .header_navbar{
     display: flex;
@@ -143,21 +149,34 @@ header{
 }
 
 //----------------info
+.info__wrapper{
+    
+    border: solid 1px hotpink;
+}
 .info__logo{
-    margin: 0 auto;
-    width: 437px;
-    height: 112px;
+    text-align: center;
+    border: solid 1px gold;
+    >img{
+        margin: 0 auto;
+        width: 437px;
+        height: 112px;
+        border: solid 1px green;
+    }
 }
 .info__invitation{
     padding: 98px 0 200px 110px;
     font-size: @fz;
     >p{
         &:first-child{
-            width: 780px;
+            // width: 780px;
+            width: 88%;
+            border: solid 1px lightgray;
         }
         &:last-child{
             padding-top: 47px;
-            width: 730px;
+            // width: 730px;
+            width: 85%;
+            border: solid 1px gray;
         }
     }
 }
@@ -204,11 +223,10 @@ header{
 
 .speaker__info{
     padding: 35px 0 0 160px;
-    >p{
-        &:first-child{     
-            font-size: 36px;
-            font-weight: bold;
-        }
+    >h3{
+        
+        font-size: 36px;
+        font-weight: bold;
     }
 }
 .speaker__pos--1{
@@ -236,6 +254,7 @@ header{
     padding: 215px 0 0 66px;
 }
 .program__clock{
+    border: solid 1px green;
     position: absolute;
     right: -45px;
     top: 130px;
@@ -505,13 +524,11 @@ header{
     width: 702px;
     font-size: @fz;
     line-height: 2;
-    >p{
-        &:first-child{
-            line-height: 1;
-            font-size: 36px;
-            font-weight: bold;
-            padding-bottom: 102px;
-        }      
+    >h2{
+        line-height: 1;
+        font-size: 36px;
+        font-weight: bold;
+        padding-bottom: 102px;
     }
     >ul{
         padding-left: 14px;        
@@ -547,7 +564,7 @@ header{
     margin-top: 40px;
 }
 .for__text--know{
-    >p{
+    >h2{
         padding-left: 50px;
     }
     >ul{
@@ -562,11 +579,12 @@ header{
     font-weight: bold;
 }
 .partner__block{
-    display: flex;
-    justify-content: space-around;   
+    // display: flex;
+    // justify-content: space-around;   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 126px;
     margin-bottom: 50px;
-   
 }
 .par__img--1{
     padding: 0px 81px 0px 0px;
@@ -642,6 +660,10 @@ header{
         border: none;
         background: none;
         border-bottom: solid 2px white;
+        color: #ffffff;
+        font-style: normal;
+        font-size: @fz;
+        line-height: 22px;
         &::placeholder{
             font-family: @fontfamily;
             color: #ffffff;
