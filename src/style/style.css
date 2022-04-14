@@ -134,18 +134,13 @@ header {
 .reg__btn:hover {
   background: #3262ff;
 }
-.info__wrapper {
-  border: solid 1px hotpink;
-}
 .info__logo {
   text-align: center;
-  border: solid 1px gold;
 }
 .info__logo > img {
   margin: 0 auto;
   width: 437px;
   height: 112px;
-  border: solid 1px green;
 }
 .info__invitation {
   padding: 98px 0 200px 110px;
@@ -153,12 +148,10 @@ header {
 }
 .info__invitation > p:first-child {
   width: 88%;
-  border: solid 1px lightgray;
 }
 .info__invitation > p:last-child {
   padding-top: 47px;
   width: 85%;
-  border: solid 1px gray;
 }
 .speaker__header {
   font-size: 36px;
@@ -535,9 +528,6 @@ header {
   grid-template-columns: repeat(3, 1fr);
   margin-top: 126px;
   margin-bottom: 50px;
-}
-.par__img--1 {
-  padding: 0px 81px 0px 0px;
 }
 .par__img--2 {
   padding: 0px 57px 0px 99px;
