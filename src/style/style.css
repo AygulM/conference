@@ -54,16 +54,11 @@ header {
   text-decoration: none;
   color: #FFFFFF;
 }
-.header__tel,
-.header__bus {
-  font-size: 18px;
-}
 .navbar {
   display: flex;
   justify-content: space-between;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 17px;
 }
 .navbar > li {
@@ -127,12 +122,64 @@ header {
   background: #2858FF;
   color: #FFFFFF;
   font-weight: 500;
-  font-size: 15.3717px;
+  font-size: 15px;
   line-height: 19px;
   cursor: pointer;
 }
 .reg__btn:hover {
   background: #3262ff;
+}
+@media (max-width: 1100px) {
+  .section__wrapper {
+    max-width: 90%;
+  }
+}
+@media (max-width: 950px) {
+  .header__tel {
+    padding-top: 0px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .header__tel > a {
+    color: #FFFFFF;
+  }
+  .navbar > li {
+    padding-left: 48px;
+  }
+  .navbar > li > a {
+    font-size: 12px;
+  }
+  .header__title {
+    margin-bottom: 35px;
+    font-size: 52px;
+  }
+  .conf,
+  .conf__address {
+    font-size: 14px;
+  }
+  .conf__date {
+    font-size: 32px;
+  }
+  .header__date {
+    padding-top: 42px;
+  }
+}
+@media (max-width: 800px) {
+  .header__tel {
+    font-size: 14px;
+  }
+  .header__title {
+    margin-bottom: 35px;
+    font-size: 46px;
+  }
+  .conf__date {
+    font-size: 28px;
+  }
+  .reg__btn {
+    width: 181px;
+    height: 42.84px;
+    font-size: 14px;
+  }
 }
 .info__logo {
   text-align: center;
@@ -152,6 +199,11 @@ header {
 .info__invitation > p:last-child {
   padding-top: 47px;
   width: 85%;
+}
+@media (max-width: 950px) {
+  .info__invitation {
+    font-size: 16px;
+  }
 }
 .speaker__header {
   font-size: 36px;
@@ -217,7 +269,6 @@ header {
   padding: 215px 0 0 66px;
 }
 .program__clock {
-  border: solid 1px green;
   position: absolute;
   right: -45px;
   top: 130px;
@@ -530,12 +581,12 @@ header {
   margin-bottom: 50px;
 }
 .par__img--2 {
-  padding: 0px 57px 0px 99px;
+  text-align: center;
   border-left: solid 1px #2858FF;
   border-right: solid 1px #2858FF;
 }
 .par__img--3 {
-  padding: 0px 0px 0px 81px;
+  text-align: right;
 }
 .sing-up__header {
   position: relative;

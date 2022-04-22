@@ -25,9 +25,6 @@ h2{
 
 //-----------   header  ---- 
 
-// main, footer{
-//     display: none;
-// }
 header{
     position: relative;
     background-image:  url(images/header_fon.png);
@@ -59,7 +56,7 @@ header{
     padding-top: 3px;
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: @fz;
     line-height: 22px;
     >a{
         cursor: pointer;
@@ -67,16 +64,15 @@ header{
         color: @text;
     }
 }
-.header__tel, .header__bus{
-    font-size: 18px;
-}
+// .header__tel, .header__bus{
+//     font-size: @fz;
+// }
 
 .navbar{
     display: flex;
     justify-content: space-between;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
     line-height: 17px;
     >li{
         list-style: none;
@@ -140,12 +136,85 @@ header{
     background: @maincolor;
     color: @text;
     font-weight: 500;
-    font-size: 15.3717px;
+    font-size: @fz - 3;
     line-height: 19px;
     cursor: pointer;
     &:hover{
         background: @maincolor+10;
     }
+}
+// adaptive header
+// .sign-up, .question, .partners, .for, .program, .speakers,  footer{
+//     display: none;
+// }
+@media (max-width:1100px){
+    .section__wrapper{
+        // margin: 0 auto;
+        max-width: 90%;
+        // border: solid gold 1px;
+    }
+}
+@media (max-width:950px){
+    .header__tel{
+        padding-top: 0px;
+        font-size: @fz - 2;
+        line-height: 22px;
+        >a{
+            color: @text;
+        }
+    }
+    .navbar{
+        >li{
+            // padding-top: 3px;//?
+            padding-left: 48px;
+            > a{
+                font-size: @fz_nav - 2;
+            }
+        }
+    }
+    // .header__info{
+    //     display: flex;
+    //     justify-content: space-between;
+    //     flex-wrap: nowrap;
+    // }
+    .header__title{
+        margin-bottom: 35px;//
+        font-size: 64px - 12px;//
+    }
+    .conf, .conf__address{
+        font-size: @fz - 4;
+    }
+    .conf__date{
+        font-size: 36px - 4px;//
+    }
+    .header__date{
+        padding-top: 42px;
+    }
+    
+}
+@media(max-width:800px){
+    // .h__logo{
+    //     width: 134px;
+    //     height: 27.28px;
+    // }
+    .header__tel{
+        font-size: @fz - 4;
+    }
+    .header__title{
+        margin-bottom: 35px;//
+        font-size: 64px - 18px;//
+    }
+    .conf__date{
+        font-size: 36px - 8px;//
+    }
+    .reg__btn{
+        width: 193px - 12px;
+        height: 49.84px - 7px;
+        font-size: @fz - 4;
+    }
+}
+@media(max-width:750px){
+
 }
 
 //----------------info
@@ -170,6 +239,11 @@ header{
             // width: 730px;
             width: 85%;
         }
+    }
+}
+@media (max-width:950px){
+    .info__invitation{
+        font-size: @fz - 2;
     }
 }
 
@@ -246,7 +320,6 @@ header{
     padding: 215px 0 0 66px;
 }
 .program__clock{
-    border: solid 1px green;
     position: absolute;
     right: -45px;
     top: 130px;
@@ -582,12 +655,14 @@ header{
 //     padding: 0px 81px 0px 0px;
 // }
 .par__img--2{
-    padding: 0px 57px 0px 99px;
+    // padding: 0px 57px 0px 99px;
+    text-align: center;
     border-left: solid 1px @maincolor;
     border-right: solid 1px @maincolor;
 }
 .par__img--3{
-    padding: 0px 0px 0px 81px;
+    // padding: 0px 0px 0px 81px;
+    text-align: right;
 }
 
 //------------------------sign-up
