@@ -76,6 +76,7 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
+  flex-direction: row;
 }
 .header__title {
   margin-bottom: 43px;
@@ -129,6 +130,15 @@ header {
 .reg__btn:hover {
   background: #3262ff;
 }
+.sign-up,
+.question,
+.partners,
+.for,
+.program,
+.speakers,
+footer {
+  display: none;
+}
 @media (max-width: 1100px) {
   .section__wrapper {
     max-width: 90%;
@@ -165,6 +175,9 @@ header {
   }
 }
 @media (max-width: 800px) {
+  .navbar > li:first-child {
+    padding: 0;
+  }
   .header__tel {
     font-size: 14px;
   }
@@ -174,6 +187,42 @@ header {
   }
   .conf__date {
     font-size: 28px;
+  }
+  .reg__btn {
+    width: 181px;
+    height: 42.84px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 750px) {
+  .navbar > li {
+    padding-left: 35px;
+  }
+}
+@media (max-width: 700px) {
+  .navbar {
+    display: none;
+  }
+  .navbar > li {
+    padding-left: 35px;
+  }
+  .header__info {
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+  }
+  .header__date {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding-left: 5px;
+  }
+  .header__title {
+    margin-bottom: 145px;
+    font-size: 42px;
+  }
+  .conf__date {
+    font-size: 32px;
   }
   .reg__btn {
     width: 181px;
@@ -203,6 +252,51 @@ header {
 @media (max-width: 950px) {
   .info__invitation {
     font-size: 16px;
+  }
+}
+@media (max-width: 750px) {
+  .info__logo > img {
+    width: 393.3px;
+    height: 100.8px;
+  }
+  .info__invitation {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .info__logo > img {
+    width: 349.6px;
+    height: 89.6px;
+  }
+}
+@media (max-width: 600px) {
+  .info__logo > img {
+    width: 349.6px;
+    height: 89.6px;
+  }
+  .info__invitation {
+    border: solid 1px gold;
+    padding: 98px 0 200px 100px;
+  }
+}
+@media (max-width: 500px) {
+  .info__invitation {
+    padding: 98px 0 200px 80px;
+  }
+}
+@media (max-width: 450px) {
+  .info__invitation {
+    padding: 98px 0 200px 60px;
+  }
+}
+@media (max-width: 400px) {
+  .info__logo > img {
+    width: 305.9px;
+    height: 78.4px;
+  }
+  .info__invitation {
+    font-size: 13px;
+    padding: 80px 0 200px 60px;
   }
 }
 .speaker__header {
