@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <!-- <link rel="stylesheet" href="main.css">
+     -->
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="app.js"></script>
-    <script type="text/javascript" src="lib.js"></script>
+    <script defer type="text/javascript" src="app.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Конференция</title>
@@ -23,18 +24,20 @@
                     <li><a href="#prog">Программа</a></li>
                     <li><a href="#reg">Регистрация</a></li>
                 </ul>
-                <!-- <div class="menu__humburger m_hum" onclick="humClick(this)">
-                    <div class="bar bar1"></div>
-                    <div class="bar bar2"></div>
-                    <div class="bar bar3"></div>
+
+                <div class="menu__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span> 
                 </div>
-                <div class="menu__mobil">
-                    <nav class="">
-                        <li><a href="#about__conference">О конференции</a></li>
-                        <li><a href="#prog">Программа</a></li>
-                        <li><a href="#reg">Регистрация</a></li>
-                    </nav>
-                </div> -->
+                <div class="menu">
+                    <nav>
+                        <li><a class="menu__item menu__item--1" href="#about__conference">О конференции</a></li>
+                        <li><a class="menu__item menu__item--2" href="#prog">Программа</a></li>
+                        <li><a class="menu__item menu__item--3" href="#reg">Регистрация</a></li>
+                   </nav>
+                </div>
+
                 <div class="header__tel"><a href="tel:+73516422222">+ 7 351 642 22 22</a></div>
             </div>
 
@@ -312,9 +315,11 @@
             <div class="section__wrapper sign-up__wrapper">
                 <!-- my block -->
                 <div class="sing-up__header">
-                    <h2 class="sing-un__title">Запишитесь на конференцю</h2>
-                    <p class="sing-up__dop--1">Укажите свои контактные данные</p>
-                    <p class="sing-up__dop--2">* Все поля обязательны к заполнению</p>
+                    <div class="sing-up__header--content">
+                        <h2 class="sing-un__title">Запишитесь на конференцю</h2>
+                        <p class="sing-up__dop--1">Укажите свои контактные данные</p>
+                        <p class="sing-up__dop--2">* Все поля обязательны к заполнению</p>
+                    </div>
                     <div class="sing-up__fon">
                         <img src="images/Vector.png" alt="">                              
                         <div class="shadow__sing-up"></div> 
@@ -334,7 +339,7 @@
                                 <input type="checkbox" class="check-highload">
                                 <span class="highload2"></span>
                             </label>
-                            <input type="submit" type="s" value="Зарегистрироваться">
+                            <input type="submit" type="submit" value="Зарегистрироваться">
                         </div>
                         
                     </form>
@@ -346,14 +351,14 @@
         <div class="section__wrapper footer__wrapper">
             <div class="footer__navbar">
                 <div class="header__bus">
-                    <a href="#"><img class="h__logo" src="images/h__logo.png" alt=""></a>
+                    <a href="#"><img class="f__logo" src="images/h__logo.png" alt=""></a>
                 </div>
-                <ul class="navbar">
+                <ul class="f__navbar">
                     <li><a href="#about__conference">О конференции</a></li>
                     <li><a href="#prog">Программа</a></li>
                     <li><a href="#reg">Регистрация</a></li>
                 </ul>
-                <div class="header__tel"><a href="tel:+73516422222">+ 7 351 642 22 22</a></div>
+                <div class="footer__tel"><a href="tel:+73516422222">+ 7 351 642 22 22</a></div>
             </div>
         </div>
    </footer>

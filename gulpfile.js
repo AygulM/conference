@@ -80,7 +80,7 @@ const scripts = () =>{
         'src/js/main.js'
     ])
     .pipe(sourceMaps.init())
-    .pipe(babel({
+    .pipe(babel({//!!!!
         presets:['@babel/env']
     }))
     .pipe(concat('app.js'))

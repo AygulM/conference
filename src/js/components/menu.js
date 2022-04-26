@@ -1,22 +1,13 @@
-function humClick(){
-    let x = document.querySelector(".menu__humburger");
-    let menu = document.querySelector(".menu__mobil")
-    x.classList.toggle("change");
-    if(menu.style.display==="block"){
-        menu.style.display="none";
-    }
-    else{
-        menu.style.display="block";
-    }
+
+function menuClick(){
+    menuBtn.classList.toggle('active');
+    menu.classList.toggle('active');
+}
+let menuBtn = document.querySelector('.menu__btn');
+let menu = document.querySelector('.menu');
+let menuA =document.querySelectorAll('.menu__item'); 
+for (let elem of menuA){
+    elem.addEventListener('click', menuClick)
 }
 
-function navIconClick(){
-    let x = document.getElementById("navLinks");
-    let navbar = document.querySelector(".header__navbar");
-    if(x.style.display==="block"){
-        x.style.display="none";
-    }
-    else{
-        x.style.display="block";
-    }
-}
+menuBtn.addEventListener('click', menuClick);
