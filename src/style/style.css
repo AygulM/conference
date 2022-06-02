@@ -127,7 +127,7 @@ header {
   cursor: pointer;
 }
 .reg__btn:hover {
-  background: #3262ff;
+  background: #3c6cff;
   transition: all 3s;
 }
 .menu__btn {
@@ -825,23 +825,17 @@ header {
 }
 .question__content {
   padding-left: 10px;
-  overflow: hidden;
-  -webkit-transition: max-height 0.35s;
-  -o-transition: max-height 0.35s;
-  transition: max-height 0.35s;
-  height: auto;
   max-height: 0px;
+  overflow: hidden;
+  transition: opacity 0.35s ease, max-height 0.35s ease;
 }
 .question__content > p {
   font-size: 16px;
   padding-bottom: 15px;
   line-height: 18px;
 }
-.question__item input:checked ~ .question__content {
-  max-height: 10000px;
-  -webkit-transition: max-height 0.35s;
-  -o-transition: max-height 0.35s;
-  transition: max-height 0.35s;
+.question__content--visible {
+  opacity: 1;
 }
 .question__item input:checked ~ .question_label {
   padding-left: 10px;
@@ -1020,37 +1014,42 @@ header {
   padding-top: 110px;
 }
 .partner__block {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   padding-top: 126px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
 .par__img {
+  width: 30%;
+  flex-shrink: 0;
   padding: 15px;
   margin-bottom: 15px;
 }
-.par__img:nth-child(3n+1) {
-  text-align: center;
-  border-right: solid 1px #2858FF;
-}
 .par__img:nth-child(3n-1) {
-  text-align: center;
-  border-right: solid 1px #2858FF;
+  border-left: solid 1px #2858FF;
 }
 .par__img:nth-child(3n) {
-  text-align: center;
+  border-left: solid 1px #2858FF;
 }
-@media (max-width: 900px) {
-  .partner__block {
-    grid-template-columns: none;
-  }
-  .par__img:nth-child(n) {
-    text-align: center;
-    border-right: none;
+@media (max-width: 800px) {
+  .par__img {
+    width: 30%;
   }
 }
 @media (max-width: 600px) {
   .partner__block {
     padding-top: 76px;
+  }
+  .par__img {
+    width: 100%;
+  }
+  .par__img:nth-child(3n-1) {
+    border-left: none;
+  }
+  .par__img:nth-child(3n) {
+    border-left: none;
   }
 }
 .sing-up__header {
@@ -1200,7 +1199,7 @@ header {
   cursor: pointer;
 }
 .sing-up__btn:hover {
-  background: #3262ff;
+  background: #3c6cff;
   transition: all 3s;
 }
 @media (max-width: 1000px) {
