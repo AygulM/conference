@@ -346,7 +346,11 @@ header{
         margin-bottom: 230px - 80px;
     }
 }
-
+@media(max-width:290px){
+    .header__title{
+        font-size: 64px - 32px;
+    }
+}
 // title style
 .title{
     font-style: normal;
@@ -1236,7 +1240,7 @@ header{
     // padding: 15px;
     // margin-bottom: 15px;//
 
-    width: 30%;
+    width: 33%;
     flex-shrink: 0;
     padding: 15px;
     margin-bottom: 15px;
@@ -1246,14 +1250,18 @@ header{
     &:nth-child(3n){
         border-left: solid 1px @maincolor;
     }
+    // >img{
+    //     width: 100%;
+    // }
 }
-// .par__img img{
-//     width: 33%;
-// }
+
 //  adaptive  Partners
-@media(max-width:800px){
+@media(max-width:900px){
     .par__img{
-        width: 30%;
+        
+        >img{
+             width: 100%;
+        }
     }
 }
 
@@ -1261,10 +1269,11 @@ header{
     .partner__block{
         padding-top: 126px - 50px;
     }
-    .par__img{
-        // padding: 15px;
-        // margin-bottom: 15px;//
     
+}
+@media(max-width:500px){
+
+    .par__img{
         width: 100%;
         &:nth-child(3n-1){
             border-left:none;
@@ -1272,9 +1281,18 @@ header{
         &:nth-child(3n){
             border-left: none;
         }
+        >img{
+            width: 50%;
+       }
     }
 }
-
+@media(max-width:400px){
+    .par__img{
+        >img{
+            width: 75%;
+       }
+    }
+}
 
 //------------------------sign-up
 .sing-up__header{
