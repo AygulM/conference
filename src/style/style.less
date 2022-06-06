@@ -568,7 +568,7 @@ header{
 }
 @media(max-width:500px){
     .speaker__title{
-        padding-left: 66px - 11px;
+        padding-left: 66px - 56px;
     }
     .speaker__block{
         flex-direction: column;
@@ -586,9 +586,6 @@ header{
     }
 }
 @media(max-width:400px){
-    .speaker__title{
-        padding-left: 66px - 22px;
-    }
     .speaker__info{
         >.speaker__name{
             font-size: 36px - 10px;
@@ -596,11 +593,11 @@ header{
         }
     }
 }
-@media(max-width:350px){
-    .speaker__title{
-        padding-left: 66px - 41px;
-    }
-}
+// @media(max-width:350px){
+//     .speaker__title{
+//         padding-left: 0;
+//     }
+// }
 
 //--------------program-------------
 
@@ -911,7 +908,16 @@ header{
     .prog__speaker{
         font-size: 36px - 10; 
     }
-
+    .prog__list{
+        >li{
+            margin-left: 40px;
+            &::before{
+                content: '●';
+                left: -40px;
+                font-size: 23px;
+            }
+        }
+    }
 }
 
 //------------------question

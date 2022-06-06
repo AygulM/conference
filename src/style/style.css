@@ -496,7 +496,7 @@ header {
 }
 @media (max-width: 500px) {
   .speaker__title {
-    padding-left: 55px;
+    padding-left: 10px;
   }
   .speaker__block {
     flex-direction: column;
@@ -512,17 +512,9 @@ header {
   }
 }
 @media (max-width: 400px) {
-  .speaker__title {
-    padding-left: 44px;
-  }
   .speaker__info > .speaker__name {
     font-size: 26px;
     line-height: 32px;
-  }
-}
-@media (max-width: 350px) {
-  .speaker__title {
-    padding-left: 25px;
   }
 }
 .program__head {
@@ -797,6 +789,14 @@ header {
   }
   .prog__speaker {
     font-size: 26px;
+  }
+  .prog__list > li {
+    margin-left: 40px;
+  }
+  .prog__list > li::before {
+    content: '●';
+    left: -40px;
+    font-size: 23px;
   }
 }
 .question__title {
